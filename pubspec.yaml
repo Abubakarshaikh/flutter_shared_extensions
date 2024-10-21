@@ -1,7 +1,8 @@
 name: flutter_shared_extensions
-description: "A new Flutter package project."
-version: 0.0.1
+description: "Provides a set of useful extensions to enhance the functionality of commonly used Dart and Flutter classes."
+version: 1.0.0
 homepage:
+repository: https://github.com/Abubakarshaikh/flutter_shared_extensions
 
 environment:
   sdk: ^3.5.2

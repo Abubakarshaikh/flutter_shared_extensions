@@ -1,39 +1,75 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Flutter Shared Extensions
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package that provides a set of useful extensions to enhance the functionality of commonly used Dart and Flutter classes. This package simplifies coding tasks and improves code readability, making development faster and more efficient.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **String Extensions**: Additional methods for string manipulation and validation.
+- **List Extensions**: Enhanced functionalities for list operations.
+- **DateTime Extensions**: Convenient methods for date and time manipulation.
+- **Map Extensions**: Useful utilities for working with maps.
+- **Num Extensions**: Additional methods for numerical operations.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following line to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter_shared_extensions: latest_version
+```
+
+Run `flutter pub get` to install the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use the extensions provided by this package, import it into your Dart file:
 
 ```dart
-const like = 'sample';
+import 'package:flutter_shared_extensions/flutter_shared_extensions.dart';
+
+void main() {
+  // Example usage of String extensions
+  String example = "Hello, World!";
+  print(example.isNotEmpty); // true
+  print(example.capitalize()); // "Hello, world!"
+
+  // Example usage of List extensions
+  List<int> numbers = [1, 2, 3, 4, 5];
+  print(numbers.sum()); // 15
+
+  // Example usage of DateTime extensions
+  DateTime now = DateTime.now();
+  print(now.isToday()); // true
+}
 ```
 
-## Additional information
+## Available Extensions
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### String Extensions
+- `isNotEmpty`: Checks if the string is not empty.
+- `capitalize()`: Capitalizes the first letter of the string.
+
+### List Extensions
+- `sum()`: Returns the sum of all elements in a list of numbers.
+
+### DateTime Extensions
+- `isToday()`: Checks if the date is today.
+
+### Map Extensions
+- Add custom methods to enhance map functionalities.
+
+### Num Extensions
+- Add additional methods for numerical operations.
+
+## Example
+
+Check out the [example directory](https://github.com/Abubakarshaikh/flutter_shared_extensions/tree/main/example) for a full example of how to use the extensions in your app.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This package is licensed under the MIT License. See the [LICENSE](https://github.com/Abubakarshaikh/flutter_shared_extensions/blob/main/LICENSE) file for more details.

@@ -1,3 +1,4 @@
-## 0.0.1
+## [1.0.0] - 2024-10-21
 
-* TODO: Describe initial release.
+### Added 
+- New flutter_shared_extension packaged add
